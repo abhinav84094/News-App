@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <span class="menu-btn" id="menu-btn"><i class="fa-solid fa-bars"></i></span>
+            <span>News App</span>
+            <span id="nav-bar" class="nav-bar"></span>
+            <button id="toggle-mode" class="toggle-btn"><i class="fa-solid fa-toggle-off"></i></button>
+        </header>
+
+        <nav id="nav-drawer" class="nav-drawer">
+            <div class="drawer-header">
+                <h3>Categories</h3>
+                <button id="close-drawer-btn" class="close-drawer-btn">X</button>
+            </div>
+            <div id="drawer-bar"></div>
+        </nav>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search news">
+        </div>
+
+        <main id="news-container" class="news-container"></main>
+        <div id="error" class="error hidden">Failed to load news. Please try again...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
